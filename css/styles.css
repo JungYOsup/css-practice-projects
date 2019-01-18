@@ -1,0 +1,98 @@
+:root {
+  --skycolor: #cde9f0;
+  --greencolor: #7bed9f;
+  --yellowcolor: #ffeaa7;
+  --pinkcolor: #fab1a0;
+  --graycolor: #dfe4ea;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+header .header_right {
+  display: flex;
+  justify-content: space-between;
+}
+.header_title span {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+ul {
+  list-style: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: center;
+}
+
+.tenGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+}
+
+.tenGrid span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.tenGrid div:first-child {
+  grid-row: 2 span;
+  background-color: var(--skycolor);
+}
+.tenGrid div:nth-child(2) {
+  grid-row: 1/3;
+  grid-column: 2/4;
+}
+.tenGrid div:nth-child(3) {
+  background-color: var(--greencolor);
+}
+.tenGrid div:nth-child(4) {
+  grid-row: 2 span;
+}
+.tenGrid div:nth-child(5) {
+  background-color: var(--yellowcolor);
+}
+.tenGrid div:nth-child(6) {
+  background-color: var(--graycolor);
+}
+.tenGrid div:nth-child(7) {
+}
+.tenGrid div:nth-child(8) {
+  grid-row: 2 span;
+  grid-column: 2 span;
+  background-color: var(--pinkcolor);
+}
+.tenGrid div:nth-child(9) {
+  grid-row: 2 span;
+}
+.tenGrid div:nth-child(10) {
+  grid-row: 2 span;
+  grid-column: 2 span;
+}
+.tenGrid div:nth-child(11) {
+}
+.tenGrid div:nth-child(12) {
+}
+
+.tenGrid div:nth-child(13) {
+  grid-row: 2 span;
+  grid-column: 2 span;
+  background-color: var(--greencolor);
+}
+.tenGrid div:nth-child(14) {
+}
+.tenGrid div:nth-child(15) {
+}
